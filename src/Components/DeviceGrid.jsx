@@ -1,13 +1,18 @@
 import React, { useContext } from 'react'
 import { DeviceContext } from '../App';
+import {DeviceCard} from '../Features/DeviceCard'
 
 function DeviceGrid() {
   const devices = useContext(DeviceContext);
   return (
-    <div>
-      Estos son tus dispositivos:
-      {devices.id}
+    <>
+    <h2>Estos son tus dispositivos:</h2>
+    <div className='flex p-2'>
+      {devices.map((device) => {
+       return <DeviceCard {...device} />
+      })}
     </div>
+    </>
   );
  }
 

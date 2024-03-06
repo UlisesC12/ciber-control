@@ -9,16 +9,16 @@ function App() {
  return (
   <DeviceContext.Provider value={[{
     id: 1,
-    equipo: 'ASUS ROG',
-    estado: 0,
-    usuario: '',
-    tiempo: 0,
+    name: 'ASUS ROG',
+    state: 0,
+    user: '',
+    time: 0,
   },{
     id: 2,
-    equipo: 'ASUS ROG',
-    estado: 1,
-    usuario: 'Juan Garcia',
-    tiempo: 60,
+    name: 'ASUS ROG',
+    state: 1,
+    user: 'Juan Garcia',
+    time: 60,
   }]}>
    <BrowserRouter>
     <Routes>
