@@ -9,7 +9,7 @@ function DeviceGrid() {
     <h2>Estos son tus dispositivos:</h2>
     <div className='flex p-2'>
       {devices.map((device) => {
-       return <DeviceCard {...device} />
+       return <DeviceCard key={device.id} {...device} />
       })}
     </div>
     </>
